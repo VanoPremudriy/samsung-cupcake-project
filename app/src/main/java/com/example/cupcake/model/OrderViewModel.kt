@@ -74,4 +74,8 @@ class OrderViewModel: ViewModel() {
         _date.value = dateOptions[0]
         _price.value = 0.0
     }
+
+    fun hasNoFlavorSet(): Boolean {
+        return _flavor.value.isNullOrEmpty()
+    }
 }
